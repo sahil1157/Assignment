@@ -1,12 +1,11 @@
-import React, { useEffect } from 'react'
-
-const socket = io("http://localhost:5000");
+import React from 'react'
+import Routing from './pages/Routing'
 
 function App() {
 
   return (
     <div>
-      hey there
+      <Routing />
     </div>
   )
 }

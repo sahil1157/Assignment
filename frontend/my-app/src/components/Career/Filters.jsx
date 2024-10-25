@@ -24,6 +24,7 @@ const Filters = () => {
         }
     ];
 
+    // this is for getting the user's selected value...if needed this function will be made...
     const handleSelectedValues = (title,role) => {
 
     }
@@ -31,14 +32,11 @@ const Filters = () => {
     return (
         <div className='mt-5'>
             <div className='flex w-fit items-center gap-4'>
-                {/* Filters Title */}
                 <span className='text-lg font-medium'>Filters</span>
 
-                {/* Displaying filter dropdowns */}
-                <div className='flex gap-4 w-full overflow-x-auto'>
+                <div className='flex gap-4 w-fit overflow-x-auto'>
                     {filters.map((filter) => (
                         <div key={filter.title} className='relative'>
-                            {/* Dropdown with plain select */}
                             <select className='px-4 py-2 w-52 rounded-full border border-gray-300 bg-white text-gray-700 cursor-pointer'>
                                 <option>{filter.title}</option>
                                 {filter.options.map((option) => (
@@ -49,7 +47,6 @@ const Filters = () => {
                     ))}
                 </div>
 
-                {/* Search Button */}
                 <button
                     className='px-6 py-[6px] rounded-full bg-blue-500 text-white cursor-pointer'
                 >

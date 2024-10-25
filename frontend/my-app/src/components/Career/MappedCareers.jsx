@@ -61,7 +61,6 @@ const MappedCareers = ({ dataId }) => {
                                 disabled={data.status === "No longer accepting applications"}
                                 onClick={() => {
                                     if (data.status !== "No longer accepting applications") {
-                                        // Handle the apply action, e.g., redirect to the Google Form or show a modal
                                         window.open("https://docs.google.com/forms/d/e/1FAIpQLSdMNkzTkvyQ6lqnz5SaX3tC5JUOCF48ydb9LRgeMGiyLgk_sw/viewform?usp=sf_link", "_blank");
                                     }
                                 }}

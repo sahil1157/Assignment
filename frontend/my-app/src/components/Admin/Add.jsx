@@ -22,7 +22,7 @@ const AddJob = () => {
         { label: 'Email', name: 'email', type: 'email', placeholder: 'e.g. jobs@designstudio.com' },
         { label: 'Website', name: 'website', type: 'url', placeholder: 'e.g. https://designstudio.com' }
     ];
-    
+
 
     const [inp, setInp] = useState({
         title: "",

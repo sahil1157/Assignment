@@ -5,6 +5,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 
 const Navbar = () => {
   const location = useLocation();
+
   const [activeLink, setActiveLink] = useState(location.pathname);
   const [isMenuOpen, setIsMenuOpen] = useState(false); //state for small screen view...hamburger menu on/off
 
@@ -19,6 +20,7 @@ const Navbar = () => {
     setActiveLink(location.pathname);
   }, [location]);
 
+  
   return (
     <div
       className='w-full relative h-[200px] bg-cover bg-center'
@@ -77,7 +79,7 @@ const Navbar = () => {
                     to={item.path}
                     onClick={() => {
                       setActiveLink(item.path);
-                      setIsMenuOpen(false); 
+                      setIsMenuOpen(false);
                     }}
                     className={`text-white py-2 px-4 transition duration-300 ease-in-out font-ubuntu hover:scale-105`}
                   >
@@ -89,9 +91,8 @@ const Navbar = () => {
                 ))}
                 <Link to='/admin'>
                   <button
-                    className={`px-4 py-[6px] ${
-                      location.pathname === "/admin" ? "bg-blue-700" : "bg-red-500"
-                    } text-white rounded-md`}
+                    className={`px-4 py-[6px] ${location.pathname === "/admin" ? "bg-blue-700" : "bg-red-500"
+                      } text-white rounded-md`}
                   >
                     Admin
                   </button>

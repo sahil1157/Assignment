@@ -13,7 +13,7 @@ const Routing = () => {
     const location = useLocation()
     const locName = location.pathname
     return (
-        // routing based on thier link.....
+        // routing based on their link.....
         <div className='flex flex-col gap-2'>
             {
                 !locName.includes("/admin") && (

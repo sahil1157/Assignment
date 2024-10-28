@@ -17,7 +17,7 @@ const port = process.env.PORT || 5000;
 // middleware....
 app.use(express.json())
 app.use(cors({
-    origin: "http://localhost:3000",
+    origin: "https://assignment-careerspage.netlify.app/",
     methods: ['PUT', "POST", "DELETE", "GET"],
     credentials: true
 }))

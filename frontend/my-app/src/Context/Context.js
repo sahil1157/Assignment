@@ -6,7 +6,8 @@ import { toast } from "react-toastify";
 export const storeContext = createContext(null)
 
 const StoreContextProvider = (props) => {
-    const url = "http://localhost:5000"
+    const url = "https://assignment-nigl.onrender.com"
+    // const url = "http://localhost:5000"
     const [details, setDetails] = useState()
     const [jobDatas, setJobDatas] = useState([])
     const location = useLocation()
@@ -54,7 +55,6 @@ const StoreContextProvider = (props) => {
             behavior: 'smooth'
         });
     }
-
     // deleting job with the use of deleteId
 
     const Delete = async (id) => {
@@ -72,7 +72,6 @@ const StoreContextProvider = (props) => {
             console.log(error)
         }
     }
-
 
     const contextValue = {
         url,
